@@ -1,0 +1,87 @@
+.tb-overview {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.plan {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+  }
+
+  th {
+    background-color: #f4f4f4;
+    color: black;
+  }
+  & .Day {
+    width: 50px;
+  }
+}
+
+.cell {
+  position: relative;
+  &.complete {
+    background-color: #2196f3;
+  }
+}
+
+.large {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input {
+  font-size: 0.6em;
+  width: 30px;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gp {
+  font-size: 0.6em;
+  position: absolute;
+  bottom: 2px;
+
+  &.added {
+    left: 2px;
+    width: 30px;
+  }
+
+  &.total {
+    right: 2px;
+  }
+}
+
+.star {
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-size: 0.8em;
+  color: gold;
+}
+
+.clickable {
+  cursor: pointer;
+  background-color: #ffeb3b;
+  color: black;
+
+  &:hover {
+    background-color: #fbc02d;
+  }
+}
+
+.interactive {
+  background-color: #2196f3;
+  color: white;
+}
